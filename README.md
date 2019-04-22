@@ -39,7 +39,7 @@ check = checks.last.get # re-fetch with metrics
 
 # find a single check - to find token, either use `Updown::Check.all`
 # or look at check page url (https://updown.io/[token])
-check = Updown::Check.get("token")
+check = Updown::Check.get("token") # returns nil if token doesn't exist (or wrong API key)
 
 # change attributes and save
 check.period       # 300

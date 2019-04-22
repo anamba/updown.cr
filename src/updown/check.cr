@@ -59,6 +59,8 @@ module Updown
         response = client.get "/api/checks/#{token}", headers: Updown.headers
         if response.success?
           Check.from_json(response.body_io? || response.body)
+        elsif response.status_code == 404
+          nil
         else
           raise Updown::Error.new(response)
         end
@@ -72,6 +74,8 @@ module Updown
         response = client.get "/api/checks/#{token}/downtimes?#{params}", headers: Updown.headers
         if response.success?
           Array(Downtime).from_json(response.body_io? || response.body)
+        elsif response.status_code == 404
+          nil
         else
           raise Updown::Error.new(response)
         end
@@ -93,6 +97,8 @@ module Updown
         response = client.get "/api/checks/#{token}/metrics?#{params}", headers: Updown.headers
         if response.success?
           Metrics.from_json(response.body_io? || response.body)
+        elsif response.status_code == 404
+          nil
         else
           raise Updown::Error.new(response)
         end
