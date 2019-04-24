@@ -8,8 +8,6 @@ See [updown.io API Docs](https://updown.io/api) for more information on availabl
 
 **Status:** Works, but error handling is pretty rough (API documentation is a little sparse in this area, so it needs more real-world testing). Please open issues for anything you that could be improved.
 
-Also need to figure out how to do a Travis build without exposing an API key to the world.
-
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
