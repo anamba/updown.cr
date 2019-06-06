@@ -54,6 +54,10 @@ module Updown
       end
     end
 
+    def self.find_by_url(url)
+      all.select { |c| c.url == "https://updown.io" }.first?
+    end
+
     def self.get(token, metrics : Bool = false)
       HTTP::Client.new(URI.parse(ENDPOINT)) do |client|
         response = client.get "/api/checks/#{token}", headers: Updown.headers

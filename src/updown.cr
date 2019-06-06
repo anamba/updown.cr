@@ -7,7 +7,7 @@ require "./updown/metrics"
 require "./updown/node"
 
 module Updown
-  VERSION = "0.1.0"
+  VERSION  = "0.2.0"
   ENDPOINT = "https://updown.io"
 
   # Valid attributes on PUT and POST https://updown.io/api
