@@ -38,7 +38,7 @@ module Updown
     class CheckSsl
       JSON.mapping(
         tested_at: String, # e.g. "2016-02-07T13:30:08Z",
-        valid: Bool,
+        valid: Bool?,
         error: String?
       )
     end
