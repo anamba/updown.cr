@@ -10,15 +10,15 @@ See [updown.io API Docs](https://updown.io/api) for more information on availabl
 
 ## Installation
 
-1. Add the dependency to your `shard.yml`:
+1.  Add the dependency to your `shard.yml`:
 
-   ```yaml
-   dependencies:
-     updown:
-       github: anamba/updown.cr
-   ```
+    ```yaml
+    dependencies:
+      updown:
+        github: anamba/updown.cr
+    ```
 
-2. Run `shards install`
+2.  Run `shards install`
 
 ## Usage
 
@@ -49,12 +49,12 @@ All methods that call the Updown API raise `Updown::Error` on a non-200 response
 
 ## Contributing
 
-1. Fork it (<https://github.com/anamba/updown.cr/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1.  Fork it (<https://github.com/anamba/updown.cr/fork>)
+2.  Create your feature branch (`git checkout -b my-new-feature`)
+3.  Commit your changes (`git commit -am 'Add some feature'`)
+4.  Push to the branch (`git push origin my-new-feature`)
+5.  Create a new Pull Request
 
 ## Contributors
 
-- [Aaron Namba](https://github.com/anamba) - creator and maintainer
+-   [Aaron Namba](https://github.com/anamba) - creator and maintainer
