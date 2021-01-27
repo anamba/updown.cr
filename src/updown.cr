@@ -1,5 +1,6 @@
 require "http"
 require "json"
+require "json_mapping"
 require "./updown/check"
 require "./updown/downtime"
 require "./updown/error"
